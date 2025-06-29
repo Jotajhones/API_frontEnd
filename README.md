@@ -1,6 +1,6 @@
 # API_frontEnd
 
-projeto pessoal de API conectando banco de dados com pagina WEB e realização de CRUD;
+projeto pessoal de API, conectando banco de dados com pagina WEB e realizando o CRUD via pagina Web;
 
 ## Tecnologias utilizadas
 - NodeJs
@@ -12,7 +12,7 @@ projeto pessoal de API conectando banco de dados com pagina WEB e realização d
 Vizualize as telas na pasta Screen SHots
 
 ## Execute o projeto
-Para executar, baixa o projeto, abra o terminal e execute os seguintes comando:
+Para executar, baixe o projeto, abra o terminal e execute os seguintes comandos:
 
 - npm i
 - npm run dev
