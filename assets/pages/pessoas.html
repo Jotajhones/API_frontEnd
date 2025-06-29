@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB - API - WEB</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/dados.css">
+    <link rel="stylesheet" href="../styles/formularios.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="menu">
+                <a href="../../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./pessoas.html">
+                    <li id="destaque">Pessoas</li>
+                </a>
+                <a href="./produtos.html">
+                    <li>Produtos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_pessoas">
+
+        <div class="dados">
+            <div class="tabela">
+                <div class="tabela_titulo">Registros de Pessoas</div>
+                <div class="tabela_subtitulo" onclick="selecionarPessoas()">
+                    <span>ID</span>
+                    <span>Nome</span>
+                    <span>CPF</span>
+                    <span>Telefone</span>
+                    <span>Email</span>
+                    <span>Situação</span>
+                </div>
+
+                <div class="resultados" id="resultados">
+                    <!-- <div class="tabela_linha">
+                        <span>02</span>
+                        <span>Jão Catonho</span>
+                        <span>25565498732</span>
+                        <span>61983000087</span>
+                        <span>joao@email.com</span>
+                        <span>A</span>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="formularios">
+            <form action="#">
+
+                <input type="number" hidden disabled id="input_id">
+
+                <label>Nome:
+                    <input type="text" name="nome" id="input_nome" placeholder="Nome..." autocomplete="off">
+                </label>
+
+                <label>CPF:
+                    <input type="number" name="cpf" id="input_cpf" placeholder="Sem pontos ou traços" autocomplete="off">
+                </label>
+
+                <label>Telefone:
+                    <input type="tel" name="telefone" id="input_telefone" placeholder="(xx)xxxx-xxxx" autocomplete="off">
+                </label>
+
+                <label>Email:
+                    <input type="email" name="email" id="input_email" placeholder="email@email.com.br" autocomplete="off">
+                </label>
+
+                <label>Situação:
+                    <select name="situacao" id="input_situacao">
+                        <option disabled selected value="Selecione">Selecione</option>
+                        <option value="A">A</option>
+                        <option value="I">I</option>
+                    </select>
+                </label>
+
+                <button onclick="postPessoas()" type="button">Adicionar</button>
+                <button onclick="putPessoas()" type="button">Atualizar</button>
+                <button onclick="deletePessoas()" type="button">Deletar</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        João Pedro de Lima
+    </footer>
+    <script src="../script/scriptPessoa.js"></script>
+    <script src="../script/menu.js"></script>
+</body>
+
+</html>

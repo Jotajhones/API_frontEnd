@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB - API - WEB</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/dados.css">
+    <link rel="stylesheet" href="../styles/formularios.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="menu">
+                <a href="../../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./pessoas.html">
+                    <li>Pessoas</li>
+                </a>
+                <a href="./produtos.html">
+                    <li id="destaque">Produtos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_produtos">
+        <div class="dados">
+            <div class="tabela">
+                <div class="tabela_titulo">Registros de Pessoas</div>
+                <div class="tabela_subtitulo" onclick="selecionarPessoas()">
+                    <span>ID</span>
+                    <span>Produto</span>
+                    <span>Quantidade</span>
+                    <span>Preço</span>
+                    <span>Situação</span>
+                </div>
+
+                <div class="resultados" id="resultados">
+                    <div class="tabela_linha_produtos">
+                        <div>
+                            <span>02 - Vestido floral</span>
+                            <span>R$ 100</span>
+                        </div>
+                        <div>
+                            <span>Estoque: 100</span>
+                            <span>Situação: A</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="formularios">
+            <form action="#">
+
+                <input type="number" hidden disabled id="input_id">
+
+                <label>Produto:
+                    <input type="text" name="produto" id="input_produto" placeholder="Produto..." autocomplete="off">
+                </label>
+
+                <label>Quantidade:
+                    <input type="number" name="Quantidade" id="input_quantidade" placeholder="Altere a quantidade do estoque..."
+                        autocomplete="off">
+                </label>
+
+                <label>Preço:
+                    <input type="number" name="preco" id="input_preco" placeholder="xx.xx"
+                        autocomplete="off">
+                </label>
+
+                <label>Situação:
+                    <select name="situacao" id="input_situacao">
+                        <option disabled selected>Selecione</option>
+                        <option value="A">A</option>
+                        <option value="I">I</option>
+                    </select>
+                </label>
+
+                <button onclick="postProdutos()" type="button">Adicionar</button>
+                <button onclick="putProdutos()" type="button">Atualizar</button>
+                <button onclick="deleteProdutos()" type="button">Deletar</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        João Pedro de Lima
+    </footer>
+    <script src="../script/menu.js"></script>
+    <script src="../script/scriptProdutos.js"></script>
+</body>
+
+</html>
