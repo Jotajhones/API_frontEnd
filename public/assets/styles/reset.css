@@ -1,0 +1,22 @@
+:root {
+    --cor1: #1e3a8a;
+    --cor2: #3b82f6;
+    --cor3: #eff6ff;
+    --cor4: #dbeafe;
+    --cor5: #1e293b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #cbd5e1;
+    color: var(--cor5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

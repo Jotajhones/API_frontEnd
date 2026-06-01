@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DB - API - WEB</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/dados.css">
+    <link rel="stylesheet" href="../styles/formularios.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="menu">
+                <a href="../../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./pessoas.html">
+                    <li id="destaque">Pessoas</li>
+                </a>
+                <a href="./produtos.html">
+                    <li>Produtos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_pessoas">
+        <div class="dados">
+            <div class="tabela">
+                <div class="tabela_titulo">Registros de Pessoas</div>
+                <div class="tabela_subtitulo">
+                    <span>ID</span><span>Nome</span><span>CPF</span><span>Telefone</span><span>Email</span><span>Situação</span>
+                </div>
+                <div class="resultados" id="resultados"></div>
+            </div>
+        </div>
+        <div class="formularios">
+            <form>
+                <input type="number" hidden id="input_id">
+                <label>Nome: <input type="text" id="input_nome" autocomplete="off" placeholder="seu nome aqui"></label>
+                <label>CPF: <input type="text" id="input_cpf" placeholder="000.000.000-00" maxlength="14"
+                        autocomplete="off"></label>
+                <label>Telefone: <input type="text" id="input_telefone" placeholder="(00) 00000-0000" maxlength="15"
+                        autocomplete="off"></label>
+                <label>Email: <input type="email" id="input_email" autocomplete="off"
+                        placeholder="email@email.com"></label>
+                <label>Situação:
+                    <select id="input_situacao">
+                        <option value="" disabled selected> Selecione</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                </label>
+
+                <div class="botoes-grid">
+                    <button id="btn-adicionar" type="button">Adicionar</button>
+                    <button id="btn-atualizar" type="button">Atualizar</button>
+                    <button id="btn-deletar" type="button" style="grid-column: span 2;">Deletar</button>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="../script/scriptPessoa.js"></script>
+    <script src="../script/menu.js"></script>
+</body>
+
+</html>

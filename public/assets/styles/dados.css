@@ -1,0 +1,106 @@
+.dados {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor3);
+    border-radius: 8px;
+    border: 1px solid var(--cor4);
+    overflow: hidden;
+}
+
+.tabela_titulo {
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor1);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela_subtitulo {
+    width: 100%;
+    height: 35px;
+    padding-inline: 10px;
+    background-color: var(--cor2);
+    color: white;
+    display: grid;
+    grid-template-columns: 40px 2fr 120px 120px 2fr 80px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.resultados {
+    width: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.tabela_linha {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40px 2fr 120px 120px 2fr 80px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-bottom: 1px solid var(--cor4);
+}
+
+.tabela_linha:hover {
+    background-color: var(--cor4);
+}
+
+.tabela_linha_produtos {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid var(--cor4);
+    cursor: pointer;
+}
+
+.tabela_linha_produtos:hover {
+    background-color: var(--cor4);
+}
+
+.tabela_subtitulo_produtos {
+    width: 100%;
+    height: 35px;
+    padding-inline: 10px;
+    background-color: var(--cor2);
+    color: white;
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 1fr 100px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.tabela_linha_produtos {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 1fr 100px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-bottom: 1px solid var(--cor4);
+}
+
+.tabela_linha_produtos:hover {
+    background-color: var(--cor4);
+}

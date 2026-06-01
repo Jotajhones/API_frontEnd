@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DB - API - WEB</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/dados.css">
+    <link rel="stylesheet" href="../styles/formularios.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="menu">
+                <a href="../../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./pessoas.html">
+                    <li>Pessoas</li>
+                </a>
+                <a href="./produtos.html">
+                    <li id="destaque">Produtos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_produtos">
+        <div class="dados">
+            <div class="tabela">
+                <div class="tabela_titulo">Registros de Produtos</div>
+                <div class="tabela_subtitulo_produtos">
+                    <span>ID</span>
+                    <span>Produto</span>
+                    <span>Preço</span>
+                    <span>Qtd</span>
+                    <span>Situação</span>
+                </div>
+                <div class="resultados" id="resultados"></div>
+            </div>
+        </div>
+        <div class="formularios">
+            <form>
+                <input type="number" hidden id="input_id">
+                <label>Produto: <input type="text" id="input_produto" placeholder="produto"></label>
+                <label>Quantidade: <input type="number" id="input_quantidade" placeholder="quantidade"></label>
+                <label>Preço: <input type="number" id="input_preco" placeholder="R$xx.xx"></label>
+                <label>Situação:
+                    <select id="input_situacao">
+                        <option value="" disabled selected> Selecione</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                </label>
+
+                <div class="botoes-grid">
+                    <button id="btn-adicionar" type="button">Adicionar</button>
+                    <button id="btn-atualizar" type="button">Atualizar</button>
+                    <button id="btn-deletar" type="button" style="grid-column: span 2;">Deletar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="../script/scriptProdutos.js"></script>
+    <script src="../script/menu.js"></script>
+</body>
+
+</html>
