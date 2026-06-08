@@ -19,7 +19,7 @@ Visualize as telas na pasta Screen Shots.
 
 ## Configuração do Banco de Dados
 
-O arquivo `.env` contendo as variáveis de ambiente foi deixado propositalmente no projeto para facilitar a avaliação. Antes de iniciar a aplicação, é necessário abrir o arquivo `.env` e alterar as credenciais para que correspondam às configurações do seu servidor MySQL local. O banco de dados e as tabelas serão criados automaticamente ao iniciar o servidor.
+O arquivo `.env-example` contendo as variáveis de ambiente foi deixado para facilitar a avaliação indicando as varaiveis de ambiente. Antes de iniciar a aplicação, é necessário abrir  ou cirar o arquivo `.env` e alterar as credenciais para que correspondam às configurações do seu servidor MySQL local. O banco de dados e as tabelas serão criados automaticamente ao iniciar o servidor.
 
 ## Execute o projeto
 
